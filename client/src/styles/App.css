@@ -1,0 +1,49 @@
+@import "../../node_modules/react-datepicker/dist/react-datepicker.css";
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.container-fluid { 
+  padding-right:0px!important;
+  padding-left:0px!important;
+}
+
+.border {
+  border: solid 1px black;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.row {
+  margin: 0px!important;
+  padding: 0px!important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* .btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none!important;
+  -webkit-box-shadow: none;
+} */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: rgb(0, 0, 44);
+    border-color: none;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    border-top: none;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.nav-tabs .nav-link:hover{
+    color:lightblue
+}

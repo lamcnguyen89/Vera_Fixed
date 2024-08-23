@@ -1,0 +1,94 @@
+.timeline {
+  border: 1px solid #4E4E50;
+  color: white;
+  position: relative;
+  background-color: black;
+}
+
+.annotations {
+  padding-bottom: 5px;
+}
+
+.choice-annotation:hover {
+  background-color: #802d35;
+}
+
+.sei-annotation:hover {
+  background-color: darkgoldenrod;
+}
+
+.scene-annotation:hover {
+  background-color: #013835;
+}
+
+.beat-annotation:hover {
+  background-color: #77868c;
+}
+
+.speech-annotation:hover {
+  background-color: darkorange;
+}
+
+.choice-annotation {
+  width:19px;
+  height:19px;
+  background: #BD6B73;
+  margin:50px auto;
+  transform:rotate(45deg);
+}
+
+.speech-annotation {
+  width:19px;
+  height:19px;
+  border-radius: 50%;
+  background:orange;
+  margin:50px auto;
+}
+
+.sei-annotation {
+  width:19px;
+  height:19px;
+  border-radius: 50%;
+  background:yellow;
+  margin:50px auto;
+}
+
+.scene-annotation {
+  width:1px;
+  height:20px;
+  z-index: 10;
+  background:#00635D;
+  margin:50px auto;
+}
+
+.beat-annotation {
+  width:1px;
+  height:15px;
+  z-index: 100!important;
+  background: #C0D6DF;
+  margin:50px auto;
+}
+
+.disabled-div {
+  pointer-events: none;
+}
+
+.annotations:hover {
+  cursor:pointer;
+}
+
+.contextmenu {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 40px 80px;
+  border: 1px solid gray;
+  width: 100px;
+  transition: 0.2s display ease-in;
+  z-index: 200;
+}
+
+.contextmenu-item:hover {
+  text-decoration: underline;
+  width: 100%!important
+}

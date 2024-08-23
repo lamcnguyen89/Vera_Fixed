@@ -1,0 +1,119 @@
+{
+  "name": "sherlock",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "@types/classnames": "^2.2.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-bootstrap": "^0.32.19",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-redux": "^7.1.5",
+    "@types/react-router-dom": "^5.1.0",
+    "@types/reactstrap": "^8.0.6",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/vimeo": "0.0.31",
+    "@types/vimeo__player": "^2.9.0",
+    "@vimeo/player": "^2.10.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "call-bind": "^1.0.2",
+    "chart.js": "^2.9.3",
+    "classnames": "^2.2.6",
+    "data-forge": "^1.8.12",
+    "data-forge-fs": "0.0.7",
+    "data-forge-plot": "^0.6.3",
+    "dotenv": "^8.2.0",
+    "for-each": "^0.3.3",
+    "is-core-module": "^2.4.0",
+    "json2csv": "^4.5.4",
+    "JSONStream": "^1.3.5",
+    "localforage": "^1.7.3",
+    "node-fetch": "^2.6.1",
+    "prettier": "^1.19.1",
+    "querystring": "^0.2.0",
+    "rdflib": "^1.0.4",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-chartjs-2": "^2.10.0",
+    "react-datepicker": "^4.1.1",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^16.11.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-promise-tracker": "^2.1.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^2.1.8",
+    "react-table": "^7.7.0",
+    "react-use-websocket": "^2.7.1",
+    "reactstrap": "^8.0.1",
+    "readable-stream": "^3.4.0",
+    "redux": "^4.0.4",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.1",
+    "request-promise": "^4.2.4",
+    "rxjs": "^6.5.3",
+    "stream-cache": "0.0.2",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.3.4",
+    "vimeo": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/mongoose": "^5.7.10",
+    "@types/node-fetch": "^2.5.6",
+    "@types/passport": "^1.0.3",
+    "@types/react-table": "^7.7.1",
+    "@types/request": "^2.48.4",
+    "@types/styled-components": "^5.1.10",
+    "concurrently": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "redux-devtools-extension": "^2.13.8",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "shared-config"
+    ],
+    "rules": {
+      "additional-rule": "warn"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {
+          "additional-typescript-only-rule": "warn"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

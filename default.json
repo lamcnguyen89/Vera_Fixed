@@ -1,0 +1,32 @@
+{
+  "id": "5bed2708-dbe9-4b5c-85ef-043e35d1e754",
+  "version": 1,
+  "info": {
+    "id": "877932bd-8c31-4614-bfed-242b7d15923c",
+    "lastUpdate": "2021-06-04T15:53:29.490Z",
+    "ifid": "F165FBA2-FFAB-45FA-81F8-A579A689D929",
+    "tagColors": {},
+    "name": "My Story",
+    "startPassage": "978c86c3-2968-4795-bc00-968dce81e553",
+    "zoom": 1,
+    "snapToGrid": false,
+    "stylesheet": "",
+    "script": "",
+    "storyFormat": "Harlowe",
+    "storyFormatVersion": "3.2.3"
+  },
+  "passages": [
+    {
+      "id": "978c86c3-2968-4795-bc00-968dce81e553",
+      "story": "877932bd-8c31-4614-bfed-242b7d15923c",
+      "top": 361,
+      "left": 710,
+      "width": 100,
+      "height": 100,
+      "tags": [],
+      "name": "Untitled Passage",
+      "selected": false,
+      "text": "Double-click this passage to edit it."
+    }
+  ]
+}

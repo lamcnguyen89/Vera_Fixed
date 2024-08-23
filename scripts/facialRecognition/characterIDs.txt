@@ -1,0 +1,11 @@
+bigby = 1
+woodsman = 2
+faith = 3
+beauty = 4
+grimble = 5
+beast = 6
+snow = 7
+cryer = 8
+grendel = 9 
+ichabod = 10
+magic mirror = 11

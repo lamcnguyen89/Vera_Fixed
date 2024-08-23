@@ -1,0 +1,8 @@
+.modal-row{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.element-col{
+    display: flex;
+}

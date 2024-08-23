@@ -1,0 +1,8 @@
+[submodule "client/modules/twine/twinejs"]
+	path = client/modules/twine/twinejs
+	url = https://github.com/many-realities-studio/twinejs.git
+  branch = 2.3-maintenance
+[submodule "client/modules/twine/harlowe"]
+	path = client/modules/twine/harlowe
+	url = https://github.com/many-realities-studio/harlowe.git
+  branch = main

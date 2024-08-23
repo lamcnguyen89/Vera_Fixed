@@ -1,0 +1,72 @@
+.video-players {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-inner-box {
+  height: 90vh;
+  margin: 1% 2%;
+  display: flex;
+  flex-flow: column;
+}
+
+.add-btn {
+  display: block;
+}
+
+.timelines-container {
+  flex-grow: 1;
+}
+
+.timeline-container-element {
+  display: inline-block;
+  height: 100%;
+}
+
+.project-buttons-container {
+  margin-bottom: 20px !important;
+}
+
+.project-videos-container {
+  margin-bottom: 10px !important;
+}
+
+#project-player-name {
+  margin: auto !important;
+  color: #a33327;
+  font-weight: bold;
+}
+
+hr {
+  background-color: #a33327;
+  height: 1px;
+}
+
+.project-video-select {
+  margin: auto !important;
+  display: flex;
+  width: 95% !important;
+}
+
+#add-annotation-container {
+  display: flex;
+}
+
+#add-annotation-btn {
+  margin: auto !important;
+}
+
+#project-name-container {
+  display: flex;
+}
+
+.project-menu-btn {
+  margin-right: 10px;
+  background-color: #a33327 !important;
+  border-color: #a33327 !important;
+}
+
+.project-menu-btn:hover {
+  background-color: #c7493a !important;
+  border-color: #c7493a !important;
+}

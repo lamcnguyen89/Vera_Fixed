@@ -1,0 +1,46 @@
+{
+  "name": "sherlock-analytics",
+  "version": "0.1.0",
+  "description": "Media content focused real-time collaborative analytics software.",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "remote-dev": "tunnel-mongo.sh start",
+    "prestart": "start mongod",
+    "start-jena-fuseki": "node ./scripts/start_fuseki.js",
+    "start-server": "node --inspect ./server/dist/index.js",
+    "dev-server": "nodemon --inspect ./server/dist/index.js",
+    "dev": "gulp",
+    "watson": "cd watson && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucidbard/Sherlock.git"
+  },
+  "author": "Dr. John Murray and UCF Students (See AUTHORS)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucidbard/Sherlock/issues"
+  },
+  "homepage": "https://github.com/lucidbard/Sherlock#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "chart.js": "^2.9.3",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "fast-csv": "^4.1.3",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-exec": "^4.0.0",
+    "gulp-rsync": "0.0.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gutil": "^1.6.4",
+    "merge": "^1.2.1",
+    "merge2": "^1.3.0",
+    "net": "^1.0.2",
+    "nodemon": "^2.0.3",
+    "npid": "^0.4.0",
+    "react-line-graph": "^1.0.6",
+    "typescript": "^3.8.3"
+  }
+}

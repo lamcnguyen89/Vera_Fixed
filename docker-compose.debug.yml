@@ -1,0 +1,67 @@
+version: "3.4"
+services:
+  nginx: 
+    image: sherlock-nginx:debug
+    container_name: nginx
+    build:
+      context: nginx
+      target: nginx-prod
+      # CHOKIDAR_USEPOLLING: "true"
+    depends_on: 
+      - twine 
+      - api
+      - client
+
+  client:
+    image: sherlock-client:debug
+    container_name: client
+    build:
+      context: client
+      target: debug
+      # CHOKIDAR_USEPOLLING: "true"
+    command: npm start
+      
+  twine:
+    image: sherlock-twine:prod
+    container_name: twine
+    build:
+      context: client/modules/twine
+      dockerfile: Dockerfile
+      target: twine-prod
+
+  api:
+    image: sherlock-api:prod
+    build:
+      context: server
+      target: api-prod
+    container_name: api
+    environment:
+      NODE_APACHE_PASSWORD: "Basic "
+      PROTOCOL: "https"
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASS: ${MONGO_PASS}
+      ACCESS_TOKEN_SECRET: ${ACCESS_TOKEN_SECRET}
+      REFRESH_TOKEN_SECRET: ${REFRESH_TOKEN_SECRET}
+      # NODE_ENV: production
+    volumes:
+      - /usr/node_modules
+    command: ["node", "dist/server.js"]
+    depends_on: 
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    volumes:
+      - ./scripts/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - dbdata:/data/db
+    ports:
+      - 127.0.0.1:27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: drowssap
+      MONGO_INITDB_DATABASE: sherlock_dev
+
+volumes:
+  dbdata:

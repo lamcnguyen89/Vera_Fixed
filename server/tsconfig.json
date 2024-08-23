@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // note you must disable the base rule as it can report incorrect errors
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "strictNullChecks": false,
+    "sourceMap": true,
+    "noImplicitAny": false
+  },
+  "include": ["src"],
+  "typeRoots": ["src/types/index.ts", "node_modules/@types"],
+  "rules": { "@eslint/comma-dangle": ["error", "never"] }
+}
