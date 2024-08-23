@@ -10,9 +10,17 @@ This is the Vera project fixed to allow the application to run
     wsl --install -d Ubuntu
 ```
 
-2. Install Docker Desktop. Do a web search for Docker Desktop and install the executable.
+2. Open a command prompt or bash terminal. Start WSL with the following command:
 
-3. Within Docker Desktop, go to the following Tabs/Menus
+```
+wsl -d Ubuntu
+```
+
+3. Once inside WSL, clone the repository.
+
+4. Install Docker Desktop. Do a web search for Docker Desktop and install the executable.
+
+5. Within Docker Desktop, go to the following Tabs/Menus
 
 ```
 Settings -> Resources -> WSL Integration
